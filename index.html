@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
     html,
     body,
@@ -31,11 +34,11 @@
             <div class="w3-third">
 
                 <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="profile-pic.png" style="width:100%" alt="Avatar">
-                        <div class="w3-display-bottomleft w3-container w3-text-black">
-                            <h2>Revati Deshmukh</h2>
-                        </div>
+                    <div class="w3-display-container profile-box">
+                        <img src="profile-pic.png" class="profile-pic" alt="Avatar">
+                    </div>
+                    <div class="w3-container profile-name">
+                        <h2>Revati Deshmukh</h2>
                     </div>
                     <div class="w3-container">
                         <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i> Software Engineer
@@ -53,33 +56,45 @@
                                     class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
                         <p>JavaScript</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">70%</div>
-                        </div>
-                        <p>ReactJS</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                                <div class="w3-center w3-text-white">60%</div>
+                            <div class="w3-container w3-center w3-round-xlarge skills" style="width:70%">
+                                <div class="w3-center w3-text-white">70%</div>
                             </div>
                         </div>
                         <p>AngularJS</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                        </div>
-                        <p>HTML</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">90%</div>
-                        </div>
-                        <p>CSS</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">70%</div>
+                            <div class="w3-container w3-center w3-round-xlarge skills" style="width:75%">
+                                <div class="w3-center w3-text-white">75%</div>
+                            </div>
                         </div>
                         <p>PHP</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">90%</div>
+                            <div class="w3-container w3-center w3-round-xlarge skills" style="width:70%">
+                                <div class="w3-center w3-text-white">70%</div>
+                            </div>
+                        </div>
+                        <p>ReactJS</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge skills" style="width:60%">
+                                <div class="w3-center w3-text-white">60%</div>
+                            </div>
+                        </div>
+                        <p>HTML</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge skills" style="width:90%">
+                                <div class="w3-center w3-text-white">80%</div>
+                            </div>
+                        </div>
+                        <p>CSS</p>
+                        <div class="w3-light-grey w3-round-xlarge w3-small">
+                            <div class="w3-container w3-center w3-round-xlarge skills" style="width:70%">
+                                <div class="w3-center w3-text-white">70%</div>
+                            </div>
                         </div>
                         <p>MySQL</p>
                         <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">70%</div>
+                            <div class="w3-container w3-center w3-round-xlarge skills" style="width:70%">
+                                <div class="w3-center w3-text-white">70%</div>
+                            </div>
                         </div>
                         <br>
 
@@ -108,11 +123,12 @@
             <div class="w3-twothird">
 
                 <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
+                    <h2 class="work-experience w3-padding-16">
+                        <i class="fa fa-briefcase fa-fw w3-margin-right w3-xxlarge section-heading"></i>Work
+                        Experience
                     </h2>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>System Analyst / OCBC Bank</b></h5>
+                        <h5 class="work-titles"><b>System Analyst / OCBC Bank</b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan'21 - Aug'21
                         </h6>
                         <ul>
@@ -125,7 +141,7 @@
                         <hr>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Technology Analyst / Infosys Ltd, India</b></h5>
+                        <h5 class="work-titles"><b>Technology Analyst / Infosys Ltd, India</b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Apr'19 - Sept'19
                         </h6>
                         <ul>
@@ -140,7 +156,7 @@
                         <hr>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Software Engineer / Avant Insights Pvt. Ltd, India</b></h5>
+                        <h5 class="work-titles"><b>Software Engineer / Avant Insights Pvt. Ltd, India</b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug'14 - Mar'19
                         </h6>
                         <ul>
@@ -173,7 +189,7 @@
                     </div>
 
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Trainee Engineer / Villagineer Technologies Pvt. Ltd, India</b></h5>
+                        <h5 class="work-titles"><b>Trainee Engineer / Villagineer Technologies Pvt. Ltd, India</b></h5>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov'13 - Jul'14
                         </h6>
                         <ul>
@@ -189,43 +205,49 @@
                     </div>
                 </div>
 
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="education w3-padding-16"><i
+                            class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge section-heading"></i>Education
+                    </h2>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Bachelor of Engineering, Information Technology, University of
-                                Pune</b></h5>
+                        <h5 class="education-titles"><b>Bachelor of Engineering, Information Technology</b></h5>
+                        <p class="w3-opacity">University of Pune</p>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2009-2013</h6>
-                        <p>Bachelor Degree</p>
                         <hr>
                     </div>
+                </div>
+
+                <div class="w3-container w3-card w3-white w3-margin-bottom">
+                    <h2 class="education w3-padding-16"><i
+                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge section-heading"></i>Certifications
+                    </h2>
+
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><a
+                        <h5 class="education-titles"><a
                                 href="https://www.coursera.org/account/accomplishments/verify/Q795RWAUCBJJ?utm_campaign=sharing_cta&utm_content=cert_image&utm_medium=certificate&utm_product=course&utm_source=link"
-                                target="_blank"><b>Front-End
-                                    Web Development with React</b></a></h5>
-                        <p>by The Hong Kong University Of Science & Technology</p>
+                                target="_blank" title="Front-End Web Development with React">
+                                <b>Front-End Web Development with React</b></a></h5>
+                        <p class="w3-opacity">The Hong Kong University Of Science & Technology</p>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun'20</h6>
-                        <p>Certification on Coursera</p>
-                        <hr>
+                        <br>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><a
+                        <h5 class="education-titles"><a
                                 href="https://www.coursera.org/account/accomplishments/verify/AH5YE3YYH86B?utm_source=link&utm_campaign=copybutton_certificate"
-                                target="_blank"><b>Front-End
-                                    JavaScript Frameworks:Angular</b></a></h5>
-                        <p>by The Hong Kong University Of Science & Technology</p>
+                                target="_blank" title="Front-End JavaScript Frameworks : Angular">
+                                <b>Front-End JavaScript Frameworks : Angular</b></a></h5>
+                        <p class="w3-opacity">The Hong Kong University Of Science & Technology</p>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May'20</h6>
-                        <p>Certification on Coursera</p><br>
+                        <br>
                     </div>
                     <div class="w3-container">
-                        <h5 class="w3-opacity"><a
+                        <h5 class="education-titles"><a
                                 href="https://www.coursera.org/account/accomplishments/verify/EH63NCRKMF3N"
-                                target="_blank"><b>Front-End
-                                    Web UI Frameworks & Tools:Bootstrap4</b></a></h5>
-                        <p>by The Hong Kong University Of Science & Technology</p>
+                                target="_blank" title="Front-End Web UI Frameworks & Tools:Bootstrap4">
+                                <b>Front-End Web UI Frameworks & Tools : Bootstrap4</b></a></h5>
+                        <p class="w3-opacity">The Hong Kong University Of Science & Technology</p>
                         <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar'20</h6>
-                        <p>Certification on Coursera</p><br>
+                        <hr>
                     </div>
                 </div>
 
@@ -238,12 +260,17 @@
         <!-- End Page Container -->
     </div>
 
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p>Find me on social media.</p>
-        <a href="https://twitter.com/DeshmukhRevati" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
-        <a href="https://www.linkedin.com/in/revati-deshmukh/" target="_blank"><i
-                class="fa fa-linkedin w3-hover-opacity"></i></a>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    <footer class="w3-container footer w3-center w3-margin-top">
+        <div>
+            <p>Want to connect with me?</p>
+            <a class="footer-space" onclick="location.href='mailto:xyz@abc.com';" target="_blank"><i
+                    class="fa fa-envelope w3-hover-opacity fa-3x" title="Email"></i></a>
+            <a class="footer-space" href="https://twitter.com/DeshmukhRevati" target="_blank"><i
+                    class="fa fa-twitter w3-hover-opacity fa-3x" title="Twitter"></i></a>
+            <a class="footer-space" href="https://www.linkedin.com/in/revati-deshmukh/" target="_blank"><i
+                    class="fa fa-linkedin w3-hover-opacity fa-3x" title="LinkedIn"></i></a>
+        </div>
+        <br>
     </footer>
 
 </body>
