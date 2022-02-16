@@ -20,6 +20,16 @@
     background-image: linear-gradient(to right , #00bf72, #004d7a );
 }
 
+.resume-box a {
+    padding-left: 1rem;
+    color: #0f687d;
+}
+
+.resume {
+    height: 5%;
+    width: 5%;
+}
+
 .section-heading{
     color: #368377;
 }
